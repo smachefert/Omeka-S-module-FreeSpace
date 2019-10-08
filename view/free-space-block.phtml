@@ -1,9 +1,9 @@
 <?php
     $this->headLink()->appendStylesheet($this->assetUrl('css/freediskspace.css', 'FreeSpace'));
 ?>
-<div id="freeSpaceBlock" class="panel">
+<div id="freeSpaceBlock" class="panel <?php echo $freeSpaceClass; ?>">
     <h2><?php echo $this->translate('Free space'); ?></h2>
-    <div class="<?php echo $freeSpaceClass; ?>">
+    <div>
         <p><?php
             echo $this->translate("Remaining space on disk: ");
             echo $freeSpaceFormatted;

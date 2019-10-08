@@ -21,9 +21,12 @@ class Module extends AbstractModule
 	    $base = 1024;
 	    $class = min((int)log($bytes , $base) , count($si_prefix) - 1);
 
-	    if ($bytes < 5369517824) {
+	    $gigaBytesWarningLimit = 15;
+
+	    if ((int)$bytes < ($gigaBytesWarningLimit * $base * $base * $base)) {
 	        $this->cssClass = "freeSpaceWarning";
 	    }
+
 
         return sprintf('%1.2f' , $bytes / pow($base,$class)) . ' ' . $si_prefix[$class] . '';
     }
