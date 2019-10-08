@@ -1,0 +1,8 @@
+.freeSpaceWarning {
+    color:red;
+    font-weight:bold;
+}
+
+#freeSpaceBlock {
+    margin-top:1em;
+}
