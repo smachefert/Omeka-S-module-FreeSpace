@@ -4,11 +4,11 @@ Small omeka-S module that will add a block on admin dashboard to display the spa
 The style will change to "warning", when the remaining space goes below the limit that is set in ```Module.php``` with the variable ```$gigaBytesWarningLimit``` (15 Gb by default).
 
 ## Default look:
-![Screenshot with warning style](screenshot_ok.png)
+![Screenshot with warning style](https://github.com/symac/Omeka-S-module-FreeSpace/raw/master/screenshot_ok.png)
 
 ## With warning:
 
-![Screenshot with warning style](screenshot_full.png)
+![Screenshot with warning style](https://github.com/symac/Omeka-S-module-FreeSpace/raw/master/screenshot_full.png)
 
 ## Todo 
 * Add a config screen to set the limit below which to switch to warning mode.
